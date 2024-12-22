@@ -1,0 +1,3 @@
+#+title: Parallel Programming
+
+* Notes on Parallel Programming using pthreads, openMP and open MPI.
