@@ -1,0 +1,14 @@
+openMP
+
+
+clause
+  shared()
+  private()
+  firstprivate()
+  default(shared)
+  default(none)
+
+#pragma omp parallel for num_threads(T)
+
+sum of natural numbers, manual Reduction
+  long long 
