@@ -7,10 +7,12 @@
 ** open MPI concepts:
    - MPI is a library for message passing or communication between nodes/cores to perform parallel programming in Distributed Memory Architecture
    - Distributed Memory Architecture vs Shared Memory Architecture
+   - What is a process?
    - MPI_Initialize, MPI_Finalize
    - What is rank?
    - What is size?
-   - MPI_COMM_WORLD
+   - Communicator: 
+     - MPI_COMM_WORLD
    - MPI_Send
    - MPI_Recv
-   - 
+   -  
