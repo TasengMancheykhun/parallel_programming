@@ -11,8 +11,15 @@
    - MPI_Initialize, MPI_Finalize
    - What is rank?
    - What is size?
-   - Communicator: 
-     - MPI_COMM_WORLD
-   - MPI_Send
-   - MPI_Recv
-   -  
+   - Communicator: A group that contains processes that can communicate with each other. 
+     - MPI_COMM_WORLD is the default communicator
+   - MPI functions
+     - MPI_Send
+     - MPI_Recv
+   - MPI Communication Types:
+     - Point to point communication:
+       - If communication happens directly between two processes or more
+       - Eg: Communication using MPI_Send() 
+     - Collective communication:  
+       - If all processes are part of the communication
+       - Eg: Communcation using Broadcast
