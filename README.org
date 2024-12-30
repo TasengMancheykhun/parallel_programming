@@ -4,7 +4,9 @@
 * Notes on Parallel Programming using pthreads, openMP and open MPI.
 
 
-** open MPI concept covered:
+** open MPI concepts:
+   - MPI is a library for parallel programming in Distributed Memory Architecture
+   - Distributed Memory Architecture vs Shared Memory Architecture
    - MPI_Initialize, MPI_Finalize
    - What is rank?
    - What is size?
