@@ -3,4 +3,6 @@
 * Notes on Parallel Programming using pthreads, openMP and open MPI.
 
 
-** open MPI concept covered
+** open MPI concept covered:
+   - MPI Send
+   - MPI Recv
