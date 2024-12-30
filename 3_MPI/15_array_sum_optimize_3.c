@@ -1,7 +1,7 @@
-// optimized method, every process created own part of data/chunk of the array
+// Optimized method, every process created own part of data/chunk of the array
 // and calculate the localsum of the chunk
 // other processes send their localsum to rank=0
-// rank=0 receives the localsums and calculate the totalsum
+// rank=0 receives the localsums and calculate the totalsum.
 
 #include<stdio.h>
 #include<stdlib.h>
