@@ -1,5 +1,5 @@
 // Here, array of its chunksize is created in each process. 
-// each process calculates its localsum and sends to rank=0
+// Each process calculates its localsum and sends to rank=0
 
 #include<stdio.h>
 #include<stdlib.h>
