@@ -3,6 +3,10 @@
 
 * Notes on Parallel Programming using pthreads, openMP and open MPI.
 
+** pthread concepts:
+   - What is pthread?
+     - pthread is an extension of C which allows us to write parallel programs by creating multiple threads in a shared memory architecture 
+
 
 ** open MPI concepts:
    - MPI is a library for message passing or communication between nodes/cores to perform parallel programming in Distributed Memory Architecture
