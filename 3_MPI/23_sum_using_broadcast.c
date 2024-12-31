@@ -18,9 +18,9 @@ int main(){
   }
   else{
       totalsum = rank;
-      int temp                      // we need to make this temp because we need to protect 'rank' variable of rank=0
-                                    // otherwise it will get overwritten and rank value will be equal to rank of last process received.
-                                    // We want to avoid this, so we create temp and receive rank value from others in temp variable 
+      int temp;                      // we need to make this temp because we need to protect 'rank' variable of rank=0
+                                     // otherwise it will get overwritten and rank value will be equal to rank of last process received.
+                                     // We want to avoid this, so we create temp and receive rank value from others in temp variable 
  
       for(int i = 1; i < size; i++){
           MPI_Recv(&temp, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
