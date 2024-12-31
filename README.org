@@ -20,7 +20,7 @@
    - One thread runs in one core. PIDs of each thread running in different cores will be same because hey belong to same process.
 
    - What is shared memory architecture?
-     - Architecture where multiple cores are connected and share a single memory is called shared memoy architecture.  
+     - Architecture where multiple cores are connected and share a single memory is called shared memory architecture. pthreads and openMP are two techniques by which we can perform parallel programming in shared memory architecture. 
 
    - What is distributed memory architecture?
      - 
