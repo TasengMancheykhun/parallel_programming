@@ -26,7 +26,7 @@
       - Architecture where in a cluster, multiple nodes are connected via a network is called distributed memory architecture. openMPI can be used to perform parallel programming in distributed memory architecture. 
 
    - What is Hybrid memory architecture?
-     - Architecture that is a combination of both shared and distributed memory architectureis called Hybrid memory architecture.
+     - Architecture that is a combination of both shared and distributed memory architecture is called Hybrid memory architecture.
 
    - What is race condition?
      -  
