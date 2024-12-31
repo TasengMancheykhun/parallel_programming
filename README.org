@@ -6,7 +6,7 @@
 ** Parallel Programming Concepts:
 
    - What is a process?
-     - A process is an instance of a program
+     - A process is an instance of a running program.
 
    - What is a thread?
      - In a process, multiple lightweight processes called threads can be created which will run simultaneously at the same time and work on differents parts of a process
@@ -20,7 +20,7 @@
    - One thread runs in one core. PIDs of each thread running in different cores will be same because hey belong to same process.
 
    - What is shared memory architecture?
-     - 
+     - Architecture where multiple cores are connected and share a single memory is called shared memoy architecture.  
 
    - What is distributed memory architecture?
      - 
@@ -34,7 +34,12 @@
 ** pthread concepts:
    - What is pthread?
      - Pthread is an extension of C which allows us to write parallel programs by creating multiple threads in a shared memory architecture
+
      - Pthread is short for POSIX thread
+
+** openMP concepts:
+   -      
+
 
 ** open MPI concepts:
    - MPI is a library for message passing or communication between nodes/cores to perform parallel programming in Distributed Memory Architecture
