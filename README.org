@@ -12,7 +12,7 @@
    - What is concurrency?
      - Multiple threads running simultaneously but not at the same time by context switching
    - What is parallelization?
-     - Multiple threads running simultaneousl at the same time    
+     - Multiple threads running simultaneously at the same time    
 
 ** open MPI concepts:
    - MPI is a library for message passing or communication between nodes/cores to perform parallel programming in Distributed Memory Architecture
