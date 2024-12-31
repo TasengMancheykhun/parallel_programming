@@ -20,6 +20,10 @@
      - Point to point communication:
        - If communication happens directly between two processes or more
        - Eg: Communication using MPI_Send() 
+       - Blocking communication, Non-blocking communication
+       - Synchronous communication, Asynchronous communication 
      - Collective communication:  
        - If all processes are part of the communication
-       - Eg: Communcation using Broadcast
+       - Eg: Communcation using Broadcast (MPI_Bcast)
+        
+     
