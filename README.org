@@ -59,7 +59,8 @@
     - openMP is an extension of C to parallelize code in shared memory architecture using directives   
     - short for open Multi-Processing
     - 
-  - #pragma omp parallel num_threads(T) 
+  - #pragma omp parallel num_threads(T)
+  - omp_get_thread_num() 
 
 ** open MPI concepts:
   - MPI is a library for message passing or communication between nodes/cores to perform parallel programming in Distributed Memory Architecture
