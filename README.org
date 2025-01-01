@@ -61,9 +61,9 @@
     - 
   - #pragma omp parallel num_threads(T)
   - omp_get_thread_num()
-  - shared variable: 
+  - shared variable clause: 
     - #pragma omp parallel shared(a) num_threads(T) 
-  - private variable: 
+  - private variable clause: 
     - #pragma omp parallel private(a) num_threads(T)
 
 ** open MPI concepts:
