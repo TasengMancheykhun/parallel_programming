@@ -5,63 +5,70 @@
 
 ** Parallel Programming Concepts:
 
-   - What is a process?
-     - A process is an instance of a running program.
+  - What is a process?
+    - A process is an instance of a running program.
 
-   - What is a thread?
-     - In a process, multiple lightweight processes called threads can be created which will run simultaneously at the same time and work on differents parts of a process
- 
-   - What is concurrency?
-     - Multiple threads running simultaneously but not at the same time by context switching
+  - What is a thread?
+    - In a process, multiple lightweight processes called threads can be created which will run simultaneously at the same time and work on differents parts of a process
 
-   - What is parallelization?
-     - Multiple threads running simultaneously at the same time   
+  - What is concurrency?
+    - Multiple threads running simultaneously but not at the same time by context switching
 
-   - One thread runs in one core. PIDs of each thread running in different cores will be same because hey belong to same process.
+  - What is parallelization?
+    - Multiple threads running simultaneously at the same time   
 
-   - What is shared memory architecture?
-     - Architecture where multiple cores are connected and share a single memory is called shared memory architecture. pthreads and openMP are two techniques by which we can perform parallel programming in shared memory architecture. 
+  - One thread runs in one core. PIDs of each thread running in different cores will be same because hey belong to same process.
 
-   - What is distributed memory architecture?
-      - Architecture where in a cluster, multiple nodes are connected via a network is called distributed memory architecture. openMPI can be used to perform parallel programming in distributed memory architecture. 
+  - What is shared memory architecture?
+    - Architecture where multiple cores are connected and share a single memory is called shared memory architecture. pthreads and openMP are two techniques by which we can perform parallel programming in shared memory architecture. 
 
-   - What is Hybrid memory architecture?
-     - Architecture that is a combination of both shared and distributed memory architecture is called Hybrid memory architecture.
+  - What is distributed memory architecture?
+    - Architecture where in a cluster, multiple nodes are connected via a network is called distributed memory architecture. openMPI can be used to perform parallel programming in distributed memory architecture. 
 
-   - What is race condition in parallel programming?
-     - A situation where two or more threads attempt to modify a shared variable simultaneously
+  - What is Hybrid memory architecture?
+    - Architecture that is a combination of both shared and distributed memory architecture is called Hybrid memory architecture.
+
+  - What is race condition in parallel programming?
+    - A situation where two or more threads attempt to modify a shared variable simultaneously
+
+  - What are the challenges in Parallel Programming?
+    - Synchronization
+    - Race condition
+    - Data loss
+    - Load balancing
 
 ** pthread concepts:
-   - What is pthread?
-     - Pthread is an extension of C which allows us to write parallel programs by creating multiple threads in a shared memory architecture
+  - What is pthread?
+    - Pthread is an extension of C which allows us to write parallel programs by creating multiple threads in a shared memory architecture
+    - Pthread is short for POSIX thread
 
-     - Pthread is short for POSIX thread
+  -  
 
 ** openMP concepts:
-   -      
+  -      
 
 
 ** open MPI concepts:
-   - MPI is a library for message passing or communication between nodes/cores to perform parallel programming in Distributed Memory Architecture
-   - Distributed Memory Architecture vs Shared Memory Architecture
-   - What is a process?
-   - MPI_Initialize, MPI_Finalize
-   - What is rank?
-   - What is size?
-   - Communicator: A group that contains processes that can communicate with each other. 
-     - MPI_COMM_WORLD is the default communicator
-   - MPI functions
-     - MPI_Send
-     - MPI_Recv
-   - MPI Communication Types:
-     - Point to point communication:
-       - If communication happens directly between two processes or more
-       - Eg: Communication using MPI_Send() 
-       - Blocking communication, Non-blocking communication
-       - Synchronous communication, Asynchronous communication 
-     - Collective communication:  
-       - If all processes are part of the communication
-       - Eg: Communcation using Broadcast (MPI_Bcast)
-   - Scatter:
-     - MPI_Scatter      
-     
+  - MPI is a library for message passing or communication between nodes/cores to perform parallel programming in Distributed Memory Architecture
+  - Distributed Memory Architecture vs Shared Memory Architecture
+  - What is a process?
+  - MPI_Initialize, MPI_Finalize
+  - What is rank?
+  - What is size?
+  - Communicator: A group that contains processes that can communicate with each other. 
+    - MPI_COMM_WORLD is the default communicator
+  - MPI functions
+    - MPI_Send
+    - MPI_Recv
+  - MPI Communication Types:
+    - Point to point communication:
+      - If communication happens directly between two processes or more
+      - Eg: Communication using MPI_Send() 
+      - Blocking communication, Non-blocking communication
+      - Synchronous communication, Asynchronous communication 
+    - Collective communication:  
+      - If all processes are part of the communication
+      - Eg: Communcation using Broadcast (MPI_Bcast)
+  - Scatter:
+    - MPI_Scatter      
+    
