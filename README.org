@@ -43,7 +43,7 @@
     - Task Parallelism
       - Different threads are used to perform different tasks  
 
-* - what is Fork-Join model?
+  - what is Fork-Join model?
 
 
 ** pthread concepts:
