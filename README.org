@@ -43,8 +43,9 @@
     - Task Parallelism
       - Different threads are used to perform different tasks  
 
-  - what is Fork-Join model?
-
+  - What is Fork-Join model?
+      
+  - 
 
 ** pthread concepts:
   - What is pthread?
@@ -58,6 +59,7 @@
     - openMP is an extension of C to parallelize code in shared memory architecture using directives   
     - short for open Multi-Processing
     - 
+  - #pragma omp parallel num_threads(T) 
 
 ** open MPI concepts:
   - MPI is a library for message passing or communication between nodes/cores to perform parallel programming in Distributed Memory Architecture
