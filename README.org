@@ -37,6 +37,14 @@
     - Data loss
     - Load balancing
 
+  - What are the two type of parallelism?
+    - Data Paralelism
+      - Data is divided to different threads but same operation is performed
+    - Task Parallelism
+      - Different threads are used to perform different tasks  
+
+
+
 ** pthread concepts:
   - What is pthread?
     - Pthread is an extension of C which allows us to write parallel programs by creating multiple threads in a shared memory architecture
@@ -45,7 +53,8 @@
   -  
 
 ** openMP concepts:
-  -      
+  - What is openMP?
+    - openMP is an extension of C to parallelize code in shared memory architecture using directives   
 
 
 ** open MPI concepts:
