@@ -60,7 +60,8 @@
     - short for open Multi-Processing
     - 
   - #pragma omp parallel num_threads(T)
-  - omp_get_thread_num() 
+  - omp_get_thread_num()
+  - shared variable: #pragma omp parallel shared(a) num_threads(T) 
 
 ** open MPI concepts:
   - MPI is a library for message passing or communication between nodes/cores to perform parallel programming in Distributed Memory Architecture
