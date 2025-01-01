@@ -28,8 +28,8 @@
    - What is Hybrid memory architecture?
      - Architecture that is a combination of both shared and distributed memory architecture is called Hybrid memory architecture.
 
-   - What is race condition?
-     -  
+   - What is race condition in parallel programming?
+     - A situation where two or more threads attempt to modify a shared variable simultaneously
 
 ** pthread concepts:
    - What is pthread?
