@@ -67,6 +67,8 @@
     - #pragma omp parallel private(a) num_threads(T)
   - First private variable clause:
     - #pragma omp parallel firstprivate(a) num_threads(T)
+  - default variable clause:
+    - #pragma omp parallel default(none) shared(a) num_threads(T)
 
 ** open MPI concepts:
   - MPI is a library for message passing or communication between nodes/cores to perform parallel programming in Distributed Memory Architecture
