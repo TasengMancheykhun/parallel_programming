@@ -59,8 +59,13 @@
     - openMP is an extension of C to parallelize code in shared memory architecture using directives   
     - short for open Multi-Processing
     - 
-  - #pragma omp parallel num_threads(T)
+  - Directive----> #pragma omp parallel
+    - creates a parallel region inside {...} and creates threads equal to number of cores available in the system
+  - Directive----> #pragma omp parallel num_threads(T)
+    - This creates a parallel region and T number of threads that runs code inside {...}
   - omp_get_thread_num()
+    - gives the thread number
+
   - shared variable clause: 
     - #pragma omp parallel shared(a) num_threads(T) 
   - private variable clause: 
@@ -69,7 +74,9 @@
     - #pragma omp parallel firstprivate(a) num_threads(T)
   - default variable clause:
     - #pragma omp parallel default(none) shared(a) num_threads(T)
-
+  
+  
+ 
 ** open MPI concepts:
   - MPI is a library for message passing or communication between nodes/cores to perform parallel programming in Distributed Memory Architecture
   - Distributed Memory Architecture vs Shared Memory Architecture
