@@ -1,9 +1,9 @@
-#title: Parallel Programming
-** Pre-requisite: C programming
+# Parallel Programming
+## Pre-requisite: C programming
 
-** Notes on Parallel Programming using pthreads, openMP and open MPI.
+## Notes on Parallel Programming using pthreads, openMP and open MPI.
 
-** Parallel Programming Concepts:
+## Parallel Programming Concepts:
 
   - What is a process?
     - A process is an instance of a running program.
@@ -47,14 +47,14 @@
       
   - 
 
-** pthread concepts:
+## pthread concepts:
   - What is pthread?
     - Pthread is an extension of C which allows us to write parallel programs by creating multiple threads in a shared memory architecture
     - Pthread is short for POSIX thread
 
   -  
 
-** openMP concepts:
+## openMP concepts:
   - What is openMP?
     - openMP is an extension of C to parallelize code in shared memory architecture using directives   
     - short for open Multi-Processing
@@ -94,7 +94,7 @@
       - for, single, master      
   
  
-** open MPI concepts:
+## open MPI concepts:
   - MPI is a library for message passing or communication between nodes/cores to perform parallel programming in Distributed Memory Architecture
   - Distributed Memory Architecture vs Shared Memory Architecture
   - What is a process?
