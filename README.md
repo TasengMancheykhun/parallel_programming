@@ -116,8 +116,8 @@
       * If all processes are part of the communication
       * Eg: Communcation using Broadcast (MPI_Bcast)
   * *Point-to-point communication*
-    *  
-    * 
+    * hh  
+    * pp
   * *Collective communication*
   * Scatter:
     * MPI_Scatter      
