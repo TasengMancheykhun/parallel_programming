@@ -1,4 +1,4 @@
-#+title: Parallel Programming
+#title: Parallel Programming
 ** Pre-requisite: C programming
 
 ** Notes on Parallel Programming using pthreads, openMP and open MPI.

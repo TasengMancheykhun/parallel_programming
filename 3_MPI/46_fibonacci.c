@@ -10,15 +10,13 @@ int main(){
   MPI_Comm_rank(MPI_COMM_WORLD, &rank);
   MPI_Comm_size(MPI_COMM_WORLD, &size);
 
-  int num = 0, num1 = 0, num2 = 0, sum = 0;   
+  int num1 = 0, num2 = 0, sum = 0;   
 
   if(rank == 0){                                  // first rank 0 and rank 1 will initialize values
-      num=0;
-      sum=num;
+      sum=0;
   } 
   else if(rank == 1){
-      num=1;
-      sum=num;
+      sum=1;
   }
 
 
@@ -29,7 +27,6 @@ int main(){
  
       sum = num1 + num2;     
   }
-
 
   
   if(rank != 0 && rank < size-2){                                    // case for upto 3rd last rank, which will send value to 1st next and 2nd next
@@ -43,7 +40,6 @@ int main(){
       MPI_Send(&sum, 1, MPI_INT, rank+2, 0, MPI_COMM_WORLD);         // case for rank=0, which will send value to 2nd next only i.e rank = 2
   }
  
-
   printf("rank=%d, value=%d \n",rank, sum);
  
   MPI_Finalize(); 
