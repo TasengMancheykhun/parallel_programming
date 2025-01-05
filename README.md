@@ -96,6 +96,14 @@
   * Manual Reduction
     * perform sum of natural numbers using manual reduction (i.e using chunksize, start, end. No using for construct)
 
+  * Reduction Clause
+    * #pragma omp parallel for reduction(+ : sum) num_threads(T)   
+  
+  * Measuring timings in openMP
+    * starttime = omp_get_wtime()
+    * endtime = omp_get_wtime()
+    * elapsed_time = endtime-starttime
+
  
  
 ## open MPI concepts:
