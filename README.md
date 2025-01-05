@@ -93,6 +93,10 @@
     * Work sharing construct
       * for, single, master      
   
+  * Manual Reduction
+    * perform sum of natural numbers using manual reduction (i.e using chunksize, start, end. No using for construct)
+
+ 
  
 ## open MPI concepts:
   * MPI is a library for message passing or communication between nodes/cores to perform parallel programming in Distributed Memory Architecture
