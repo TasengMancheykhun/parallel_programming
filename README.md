@@ -137,4 +137,9 @@
   * *Collective communication*
   * Scatter:
     * MPI_Scatter      
-    
+  
+
+  * MPI_Datatype
+    * MPI_Type_contiguous
+    * MPI_Type_vector
+    * MPI_Type_indexed   
