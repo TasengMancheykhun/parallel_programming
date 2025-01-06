@@ -112,6 +112,8 @@
     * ifdef _OPENMP
     * . . . .
     * endif
+
+    * Code inside this will be ignored by gcc compiler when -fopenmp is not used during compilation and sun as normal code. The directive #pragma omp parallel is also ignored and the code runs serially.
  
  
 ## open MPI concepts:
