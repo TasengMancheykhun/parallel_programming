@@ -5,6 +5,10 @@
 
 ## Parallel Programming Concepts:
 
+  * Cluster Architecture?
+
+  * HPC Architecture?
+
   * What is a process?
     * A process is an instance of a running program.
 
