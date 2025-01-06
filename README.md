@@ -150,8 +150,8 @@
 
 * Dynamically allocate 2d Array
   
-  * int** arr = (int**) malloc(sizeof(int*)*row);
-    for(int i=0; i<row; i++){
+  * int** arr = (int**) malloc(sizeof(int*)*row); $\n$
+    for(int i=0; i<row; i++){  $\n$
       arr[i] = (int*) malloc(sizeof(int)*col); 
     } 
 
