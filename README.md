@@ -144,3 +144,20 @@
     * MPI_Type_vector
     * MPI_Type_indexed  
     * Mimick MPI_Type_indexed as MPI_Type_contiguous and MPI_Type_vector 
+
+
+
+
+* Dynamically allocate 2d Array
+  
+  * int** arr = (int**) malloc(sizeof(int*)*row);
+    for(int i=0; i<row; i++){
+      arr[i] = (int*) malloc(sizeof(int)*col); 
+    } 
+
+
+    for(int i=0; i<row; i++){
+      free(arr[i]);
+    }
+
+    free(arr);
