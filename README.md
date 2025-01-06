@@ -142,4 +142,5 @@
   * MPI_Datatype
     * MPI_Type_contiguous
     * MPI_Type_vector
-    * MPI_Type_indexed   
+    * MPI_Type_indexed  
+    * Mimick MPI_Type_indexed as MPI_Type_contiguous and MPI_Type_vector 
