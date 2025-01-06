@@ -152,12 +152,12 @@
   
   * int** arr = (int**) malloc(sizeof(int*)*row); <br />
     for(int i=0; i<row; i++){  <br />
-      arr[i] = (int*) malloc(sizeof(int)*col); <br /> 
+     \t  arr[i] = (int*) malloc(sizeof(int)*col); <br /> 
     } <br />
 
     
     for(int i=0; i<row; i++){ <br />
-      free(arr[i]);  <br />
+      \t  free(arr[i]);  <br />
     } <br />
 
     free(arr);
