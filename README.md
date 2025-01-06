@@ -108,6 +108,10 @@
     * endtime = omp_get_wtime()
     * elapsed_time = endtime-starttime
 
+  * Error checking in openMP
+    * ifdef _OPENMP
+    * . . . .
+    * endif
  
  
 ## open MPI concepts:
