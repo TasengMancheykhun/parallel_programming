@@ -153,7 +153,6 @@
   * Scatter:
     * MPI_Scatter      
   
-
   * MPI_Datatype
     * MPI_Type_contiguous
     * MPI_Type_vector
@@ -162,6 +161,16 @@
  
   * MPI_Type_create_struct
   * Create student struct with data like name, PRN, age, email, etc and send from process 0 to process 1
+  * MPI_Pack
+  * MPI_Unpack
+  * MPI_Comm_split(MPI_COMM_WORLD, color, rank, &new_comm)
+  * MPI_Comm_group(MPI_COMM_WORLD, &world_group)
+  * MPI_Group_incl()
+  * MPI_Comm_create_group()
+  * MPI Task Parallelism using manual groups and communicators
+
+
+
 
 <br /> ------------------------------------------------- <br />
 **Extra Topics**
