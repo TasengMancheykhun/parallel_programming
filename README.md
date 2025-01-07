@@ -90,6 +90,9 @@
   * First private variable clause:
     * #pragma omp parallel firstprivate(a) num_threads(T)
 
+  * Last private variable clause:
+    * #pragma omp parallel lastprivate(a) num_threads(T)
+
   * default variable clause:
     * #pragma omp parallel default(none) shared(a) num_threads(T)
  
@@ -115,7 +118,8 @@
 
     * Code inside this will be ignored by gcc compiler when -fopenmp is not used during compilation and sun as normal code. The directive #pragma omp parallel is also ignored and the code runs serially.
 
-  * Matrix Addition using #pragma omp parallel for 
+  * Matrix Addition using #pragma omp parallel for
+  *  
  
  
 ## open MPI concepts:
@@ -123,6 +127,9 @@
   * Distributed Memory Architecture vs Shared Memory Architecture
   * What is a process?
   * MPI_Initialize, MPI_Finalize
+  * Difference between MPI_Abort(MPI_COMM_WORLD,1) vs MPI_Finalize()?
+    * MPI_Abort ---> terminates a process
+    * MPI_Finalize() ---> ends the MPI communication
   * What is rank?
   * What is size?
   * Communicator: A group that contains processes that can communicate with each other. 
