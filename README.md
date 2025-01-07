@@ -141,7 +141,13 @@
       * Take input from users
       * To print output
 
+    * There is no implicit barrier at the end of the master construct block. All other threads skips and moves forward and does not wait even if data is not initialized. 
 
+  * #pragma omp single -----------------> [CONSTRUCT]
+
+    * 'single' is also another 'Work Sharing Construct' which creates a region where the block of code is executed by only one thread that is free and others will skip it.
+
+    * There is an 'implicit barrier' at the end of the single block that ensures that all threads reach the end of the block before proceeding. If you want to avoid this implicit barrier, we can use the 'nowait' clause
  
  
 ## open MPI concepts:
