@@ -122,7 +122,15 @@
 
   * #pragma omp critical
     * What is critical section in openMP?
-      * In openMP, a critical section is a region of code created by the construct 'critical' where it creates a lock like feature where at a time, only one thread can enter and execute the task, and all other threads will wait until it finishes and unlocks.    
+      * In openMP, a critical section is a region of code created by the construct 'critical' where it creates a lock like feature where at a time, only one thread can enter and execute the task, and all other threads will wait until it finishes and unlocks.
+
+    * Benifits of Critical Section
+      * Thread Synchronization
+      * Prevents race condition
+      * Mutual Exclusive access
+    
+    * Disadvantage of Critical Section
+      * Performance Impact: creates performance bottleneck because other threads are forced to wait        
  
  
 ## open MPI concepts:
