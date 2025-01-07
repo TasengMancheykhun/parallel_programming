@@ -161,6 +161,7 @@
     * Mimick MPI_Type_indexed as MPI_Type_contiguous and MPI_Type_vector 
  
   * MPI_Type_create_struct
+  * Create student struct with data like name, PRN, age, email, etc and send from process 0 to process 1
 
 
 * Dynamically allocate 2d Array
