@@ -121,6 +121,7 @@
   * Matrix Addition using directive #pragma omp parallel for
 
   * #pragma omp critical -------------> [CONSTRUCT]
+
     * What is critical section in openMP?
       * In openMP, a critical section is a region of code created by the construct 'critical' where it creates a lock like feature where at a time, only one thread can enter and execute the task, and all other threads will wait until it finishes and unlocks.
 
@@ -131,6 +132,11 @@
     
     * Disadvantage of Critical Section
       * Performance Impact: creates performance bottleneck because other threads are forced to wait        
+  * #pragma omp master ----------------> [CONSTRUCT]
+
+    * 'master' is a 'Work Sharing Construct' which creates a region where the code is only executed by the master thread, while other threads in this parallel region will skip this section/region of code.
+
+
  
  
 ## open MPI concepts:
