@@ -136,6 +136,11 @@
 
     * 'master' is a 'Work Sharing Construct' which creates a region where the code is only executed by the master thread, while other threads in this parallel region will skip this section/region of code.
 
+    * Some use of Master region can be:
+      * Initialize the data, say elements of an array.
+      * Take input from users
+      * To print output
+
 
  
  
