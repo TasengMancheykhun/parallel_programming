@@ -148,7 +148,12 @@
     * 'single' is also another 'Work Sharing Construct' which creates a region where the block of code is executed by only one thread that is free and others will skip it.
 
     * There is an 'implicit barrier' at the end of the single block that ensures that all threads reach the end of the block before proceeding. If you want to avoid this implicit barrier, we can use the 'nowait' clause
- 
+
+  * #pragma omp barrier ----------------> [CONSTRUCT]
+
+    * 'barrier' is a construct that is used for synchronization of all threads in a parallel region. Barrier is a point where a thread waits untill all other threads have reached the barrier, ensuring that all threads are synchronized before they continue execution.
+  
+    * Since 'master' has no implicit barrier, here we can use this explicit barrier, so that other threads wait for the master thread to initialize the data.     
  
 ## open MPI concepts:
   * MPI is a library for message passing or communication between nodes/cores to perform parallel programming in Distributed Memory Architecture
