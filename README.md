@@ -153,7 +153,8 @@
 
     * 'barrier' is a construct that is used for synchronization of all threads in a parallel region. Barrier is a point where a thread waits untill all other threads have reached the barrier, ensuring that all threads are synchronized before they continue execution.
   
-    * Since 'master' has no implicit barrier, here we can use this explicit barrier, so that other threads wait for the master thread to initialize the data.     
+    * Use case of Barrier
+      * Since 'master' has no implicit barrier, here we can use this explicit barrier, so that other threads wait for the master thread to initialize the data.     
  
 ## open MPI concepts:
   * MPI is a library for message passing or communication between nodes/cores to perform parallel programming in Distributed Memory Architecture
