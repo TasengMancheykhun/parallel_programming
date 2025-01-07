@@ -4,7 +4,7 @@
 ## Notes on Parallel Programming using pthreads, openMP and open MPI.
 
 ## Parallel Programming Concepts:
-
+`
   * Cluster Architecture?
 
   * HPC Architecture?
@@ -159,8 +159,8 @@
     * MPI_Type_vector
     * MPI_Type_indexed  
     * Mimick MPI_Type_indexed as MPI_Type_contiguous and MPI_Type_vector 
-
-
+ 
+  * MPI_Type_create_struct
 
 
 * Dynamically allocate 2d Array
