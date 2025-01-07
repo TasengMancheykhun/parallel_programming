@@ -163,7 +163,8 @@
   * MPI_Type_create_struct
   * Create student struct with data like name, PRN, age, email, etc and send from process 0 to process 1
 
-
+<br \> ------------------------------------------------- <br \>
+* Extra Topic
 * Dynamically allocate 2d Array
   
   * int** arr = (int**) malloc(sizeof(int*)*row); <br />
