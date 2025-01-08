@@ -199,6 +199,16 @@
   * Both 'Atomic' and 'Critical' helps to avoid race condition. Then what's the difference:
     * Atomic is faster as here there is no lock
 
+  * Nested Parallelism
+    * By default, nested parallelism is OFF
+    * parallel region inside parallel region
+
+    * ON using environment variable
+      * export OMP_NESTED = TRUE
+ 
+    * ON using function
+      * omp_set_nested(1) 
+
 
 ## open MPI concepts:
   * MPI is a library for message passing or communication between nodes/cores to perform parallel programming in Distributed Memory Architecture
