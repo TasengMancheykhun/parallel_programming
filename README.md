@@ -155,7 +155,28 @@
   
     * Use case of Barrier
       * Since 'master' has no implicit barrier, here we can use this explicit barrier, so that other threads wait for the master thread to initialize the data.     
+
+  * Timing
+    * double starttime = omp_get_wtime()
+
+  * Scheduling
  
+    * #pragma omp parallel for schedule(static, 3) num_threads(T)
+      * Work sharing clause where the chunksize (3) amount of data is being sent to each thread  
+
+    * #pragma omp parallel for schedule(dynamic, 3) num_threads(T)
+      * Work sharing clause where the chunksize (3) amount of data is being sent to each thread  
+
+     
+    * #pragma omp parallel for schedule(guided, 3) num_threads(T)
+
+    
+    * #pragma omp parallel for schedule(runtime, 3) num_threads(T)
+
+
+    * #pragma omp parallel for schedule(auto, 3) num_threads(T)
+
+
 ## open MPI concepts:
   * MPI is a library for message passing or communication between nodes/cores to perform parallel programming in Distributed Memory Architecture
   * Distributed Memory Architecture vs Shared Memory Architecture
