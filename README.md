@@ -163,10 +163,10 @@
  
     * #pragma omp parallel for schedule(static, 3) num_threads(T)
       * Work sharing clause where the chunksize (3) amount of data is being sent to each thread  
+      * Any remainder work is given in round robbin fashion back to thread 0
 
     * #pragma omp parallel for schedule(dynamic, 3) num_threads(T)
-      * Work sharing clause where the chunksize (3) amount of data is being sent to each thread  
-
+      * Work sharing clause where the chunksize (3) amount of data is being sent to the thread that becomes free at runtime
      
     * #pragma omp parallel for schedule(guided, 3) num_threads(T)
 
