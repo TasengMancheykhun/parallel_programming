@@ -175,11 +175,14 @@
 
     
     * #pragma omp parallel for schedule(runtime) num_threads(T)
-      * Using an environment variable called 'OMP_SCHEDULE', which can be used to control the scheduling strategy and chunksize at runtime.
+      * Using environment variable called 'OMP_SCHEDULE', which can be used to control the scheduling strategy and chunksize at runtime.
       
-      * Eg: export OMP_SCHEDULE = "dynamic,3" 
+      * Eg: export OMP_SCHEDULE = "dynamic,3"
+      * check: echo $OMP_SCHEDULE       
+      * unset: unset OMP_SCHEDULE
 
     * #pragma omp parallel for schedule(auto)
+      * System automatically selects the most appropriate scheduling strategy
 
 
 ## open MPI concepts:
