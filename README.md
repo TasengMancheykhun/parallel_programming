@@ -196,6 +196,9 @@
        * No lock applied
        * No queue management 
 
+  * Both 'Atomic' and 'Critical' helps to avoid race condition. Then what's the difference:
+    * Atomic is faster as here there is no lock
+
 
 ## open MPI concepts:
   * MPI is a library for message passing or communication between nodes/cores to perform parallel programming in Distributed Memory Architecture
