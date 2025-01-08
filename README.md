@@ -184,6 +184,18 @@
     * #pragma omp parallel for schedule(auto)
       * System automatically selects the most appropriate scheduling strategy
 
+ 
+  * Atomic function
+     * Can do simple operations arithmetic like add,sub,mult
+     * for add, must do -------> sum += i+1 
+     * for sub, must do -------> sum -= i+1 
+     * for must, must do -------> sum *= i+1 
+
+     * Atomic function avoids Race condition
+     * Faster than critical sections because:
+       * No lock applied
+       * No queue management 
+
 
 ## open MPI concepts:
   * MPI is a library for message passing or communication between nodes/cores to perform parallel programming in Distributed Memory Architecture
