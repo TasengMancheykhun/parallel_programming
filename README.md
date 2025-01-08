@@ -167,14 +167,19 @@
 
     * #pragma omp parallel for schedule(dynamic, 3) num_threads(T)
       * Work sharing clause where the chunksize (3) amount of data is being sent to the thread that becomes free at runtime
-     
+      * Communication overhead is present here
+      * Helps in load balancing    
+
+ 
     * #pragma omp parallel for schedule(guided, 3) num_threads(T)
 
     
-    * #pragma omp parallel for schedule(runtime, 3) num_threads(T)
+    * #pragma omp parallel for schedule(runtime) num_threads(T)
+      * Using an environment variable called 'OMP_SCHEDULE', which can be used to control the scheduling strategy and chunksize at runtime.
+      
+      * Eg: export OMP_SCHEDULE = "dynamic,3" 
 
-
-    * #pragma omp parallel for schedule(auto, 3) num_threads(T)
+    * #pragma omp parallel for schedule(auto)
 
 
 ## open MPI concepts:
