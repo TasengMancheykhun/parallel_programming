@@ -98,7 +98,10 @@
  
   * Constructs in openMP: They are programming structures that enable parallel execution.
     * Work sharing construct
-      * for, single, master      
+      * for
+      * single
+      * master  
+    * for used for 'data parallelism'   
   
   * Manual Reduction
     * perform sum of natural numbers using manual reduction (i.e using chunksize, start, end. No using for construct)
@@ -208,6 +211,13 @@
  
     * ON using function
       * omp_set_nested(1) 
+
+  * Section
+    * Work sharing construct
+    * Multiple section within sections
+    * sections ------> section, section, section
+    * section used for 'task parallelism'
+    * 
 
 
 ## open MPI concepts:
