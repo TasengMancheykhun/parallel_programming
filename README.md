@@ -217,7 +217,8 @@
     * Multiple section within sections
     * sections ------> section, section, section
     * section used for 'task parallelism'
-    * 
+
+    * Each section executed by each thread 
 
 
 ## open MPI concepts:
@@ -285,3 +286,31 @@
     } <br />
 
     free(arr);
+
+
+
+* HPC topics:
+  * Flynn's Taxonomy / Flynn's Classification:
+    * This classification categorizes computer architecture based on how instructions and data are processed simultaneously. Flynn's classification divides computer architectures into four categories based on two factors: 
+    * (a) Number of instruction streams
+    * (b) Number of data streams
+
+    * SISD (Single Instruction Single Data stream) 
+      * A single processor executes a single instruction stream and works on a single data stream    
+    
+    * SIMD (Single Instruction Multiple Data stream)
+      * One instruction stream is executed simultaneously on multiple data streams. This allows the same operation to be performed on multiple data elements at once
+      * Used in GPUs
+      * SIMD is highly effective for tasks that involve processing large datasets with similar operations, such as image processing, scientific simulations or machine learning algorithms. 
+
+    * MIMD (Multiple Instruction Multiple Data stream)
+      * Multiple instruction streams are executed simultaneously, each operating on its own data stream. This is the most general form of parallel processing
+
+      * MUlticore processors, distributed systems, cluster of computers, and modern supercomputers
+
+      * MIMD architectures are the backbone of most HPC systems, such as cluster of nodes, where each node may execute different tasks or commputations. This enables true parallel processing for complex simulations, scientific calculations, or real-time data processing 
+
+    * MISD (Multiple Instruction Single Data stream)
+      * Multiple Instruction streams operate on a single data stream. This architecture is less common and only specific applications use it.
+      * Specialized fault-tolerant or some safety-critical systems use it. Eg: Blackbox in aeroplanes. 
+ 
